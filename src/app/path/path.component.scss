@@ -1,0 +1,117 @@
+// General styling reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #7f7fe8;
+  }
+  
+  // Main container for the path
+  .path-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: beige;
+    gap: 40px;
+  }
+  
+  // Flex container for map and blueprint images
+  .map-blueprint {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  
+    .image-container {
+      position: relative;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+      }
+  
+      .blueprint,
+      .map {
+        width: 350px;
+        height: 250px;
+        display: block;
+        border-radius: 12px;
+      }
+  
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+  
+        &:hover {
+          opacity: 1;
+        }
+  
+        .overlay-text {
+          color: white;
+          font-size: 1.5rem;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  
+  // Styling for the information section
+  .info-section {
+    width: 85%;
+    max-width: 800px;
+    background: white;
+    border-radius: 15px;
+    padding: 25px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+  
+    .room-info {
+      font-size: 1.2rem;
+      color: #2b2b2b;
+      line-height: 1.7;
+      letter-spacing: 0.5px;
+  
+      .highlight {
+        color: #d35400;
+        font-weight: bold;
+        font-size: 1.3rem;
+      }
+    }
+  }
+  
+  // Adding media queries for responsiveness
+  @media (max-width: 768px) {
+    .map-blueprint {
+      flex-direction: column;
+  
+      .image-container {
+        width: 90%;
+      }
+    }
+  
+    .info-section {
+      width: 95%;
+    }
+  }
+  

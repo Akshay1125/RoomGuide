@@ -1,0 +1,95 @@
+/* Page background with a cooler gradient for a vibrant, calming effect */
+:host {
+    display: block;
+    padding: 2rem;
+    background: linear-gradient(120deg, #00c6ff, #0072ff, #00e6b8, #ff758c); /* Cool-to-vibrant gradient */
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Gradient shift animation */
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .contact-container {
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    padding: 2.5rem;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #ffb86c, #ff6a88, #ff9e80); /* Warm gradient for container */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    color: #333;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      color: #444;
+    }
+  
+    p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      color: #555;
+    }
+  
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+  
+      label {
+        font-weight: bold;
+        color: #555;
+        text-align: left;
+      }
+  
+      input,
+      textarea {
+        padding: 0.8rem;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 1rem;
+        color: #333;
+        background-color: #ffffff;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  
+        &:focus {
+          outline: none;
+          border-color: #ff6a88;
+          box-shadow: 0 0 8px rgba(255, 106, 136, 0.3);
+        }
+      }
+  
+      button {
+        padding: 0.8rem 1.2rem;
+        background-color: #ff6a88;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+  
+        &:hover {
+          background-color: #ff5071;
+          transform: scale(1.05);
+        }
+  
+        &:active {
+          transform: scale(0.95);
+        }
+      }
+    }
+  }
+  

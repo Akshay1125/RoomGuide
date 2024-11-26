@@ -1,0 +1,24 @@
+<div class="topbar">
+    <div class="header">
+      <div class="freerooms">
+        <h1>Your Room Guide</h1>
+      <p class="iitkgp">Nalanda Complex IIT Kharagpur</p>
+      </div>
+      <input 
+        class="input is-rounded" 
+        placeholder="Search Room" 
+        (input)="roomSearch.emit($event)" 
+        [value]="selectedDay" />
+    </div>
+  
+    <div class="filter">
+      <select (change)="dayChange.emit($event)">
+        <option value="" disabled selected>DAY</option>
+        <option *ngFor="let day of days">{{ day }}</option>
+      </select>
+      <select (change)="timeChange.emit($event)">
+        <option *ngFor="let time of times">{{ time }}</option>
+      </select>
+    </div>
+  </div>
+  

@@ -1,0 +1,99 @@
+/* Reset default margin/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container that covers the entire viewport */
+.homepage-container {
+  position: relative;
+  height: 97.5vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+/* Full-screen image with slight 3D effect */
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4));
+    z-index: 1;
+  }
+}
+
+/* Buttons */
+.buttons {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+  .book-now-button {
+    background: linear-gradient(45deg, #d86e7a, #f0a6d4); /* Gradient effect */
+    color: white;
+    font-size: 1.5rem;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 8px 20px rgba(255, 87, 51, 0.6); /* Subtle shadow */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-5px) scale(1.1);
+      box-shadow: 0 10px 30px rgba(255, 100, 150, 0.8);
+    }
+  }
+}
+
+/* Floating particles effect */
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+
+  .particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    animation: float 6s infinite ease-in-out;
+    opacity: 0.6;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px) translateX(20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}

@@ -1,0 +1,87 @@
+.metrics-container {
+    padding: 2rem;
+    background-color: #f5f7fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 800px;
+    text-align: center;
+  
+    h2 {
+      margin-bottom: 1.5rem;
+      font-size: 1.75rem;
+      color: #333;
+    }
+  
+    canvas {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+  }
+  
+  .chart-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  
+    .info-box {
+      flex: 1;
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      border-radius: 8px;
+      background-color: #0a3d77;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      color: #040608;
+      font-weight: bold;
+  
+      &:first-child {
+        background-color: #fce4ec;
+        color: #c2185b;
+      }
+  
+      &:last-child {
+        background-color: #e8f5e9;
+        color: #388e3c;
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .rooms {
+      flex-direction: column;
+    }
+  }
+  
+  /* Chart styling */
+  .metrics-container canvas {
+    max-width: 100%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-info .info-box {
+    background-color: #ffeb3b;
+    color: #c2185b;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+/* In both theme files */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #ffcc00; /* Adjust for light/dark mode */
+    color: #313437;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  

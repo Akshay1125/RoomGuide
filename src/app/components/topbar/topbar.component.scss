@@ -1,0 +1,80 @@
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #2b2e31;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 0 0 20px 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.freerooms {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px;
+}
+
+.freerooms h1 {
+    color: #b6cce3;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+.freerooms .iitkgp {
+    color: #ffffff;
+    font-size: 1rem;
+    margin-top: 4px;
+}
+
+.input {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #44484b;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.input:focus {
+    background-color: #3a3d40;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+}
+
+select {
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    background-color: #3a3d40;
+    margin-left: 15px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+select:focus {
+    background-color: #2b2e31;
+}
+
+select option {
+    background-color: #2b2e31;
+    color: #ffffff;
+}

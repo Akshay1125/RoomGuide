@@ -1,0 +1,26 @@
+<!-- <button (click)="toggleTheme()">Toggle Theme</button> -->
+
+<div class="everything">
+  <app-topbar 
+    [selectedDay]="selectedDay" 
+    [selectedTime]="selectedTime" 
+    (dayChange)="handleSelectChangeDay($event)" 
+    (timeChange)="handleSelectChangeTime($event)" 
+    (roomSearch)="handleSelectChangeRoom($event)">
+  </app-topbar>
+
+  <div class="rooms">
+    <h2>Available Rooms</h2>
+    <app-room *ngFor="let room of filteredFreeRooms" [roomName]="room"></app-room>
+  </div>
+
+  <div class="metrics-section">
+    <h3>Room Utilization Metrics</h3>
+    <app-utilization-metrics [selectedDay]="selectedDay"></app-utilization-metrics>
+  </div>
+
+  <div class="app-container">
+    <app-optimization></app-optimization>
+  </div>
+  <app-footer></app-footer>
+</div>

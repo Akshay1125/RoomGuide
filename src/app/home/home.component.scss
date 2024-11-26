@@ -1,0 +1,180 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #333;
+    background-color: #f0f8ff;  // Light pastel blue background for a bright, clean look
+}
+
+.everything {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ffffff;  // White main section for contrast against colored elements
+    padding: 20px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.separator {
+    margin: 20px 0;
+    font-weight: bold;
+    text-align: center;
+    color: #ff7f50;  // Coral color for separators, adding warmth
+}
+
+/* Topbar styling */
+app-topbar {
+    display: block;
+    margin-bottom: 20px;
+    background-color: #ffefd5;  // Light peach color for a soft, welcoming topbar
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+app-topbar:hover {
+    background-color: #ffd700;  // Golden yellow for a vibrant hover effect
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Room container styling */
+.rooms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    transition: gap 0.3s ease;
+}
+
+/* Individual room styling */
+app-room {
+    background-color: #87cefa;  // Soft sky blue for room tiles
+    color: #333;
+    font-size: 140%;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 10px);  // Responsive 3-column layout
+    max-width: calc(33.333% - 10px);
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+app-room:hover {
+    transform: translateY(-5px);
+    background-color: #40e0d0;  // Turquoise for hover effect
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer styling */
+app-footer {
+    background-color: #ffb6c1;  // Light pink for footer for a friendly, colorful touch
+    color: #333;
+    text-align: center;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 0;
+    width: calc(100% - 40px);
+    margin: 20px auto;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+app-footer:hover {
+    background-color: #ff69b4;  // Hot pink for footer hover effect
+    box-shadow: 0 -8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Additional adjustments for better compatibility */
+app-room {
+    background-color: #87cefa;  // Reconfirm room color
+    color: #333;  // Dark text color for readability
+    font-weight: 600;
+    font-size: 140%;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 10px);
+    max-width: calc(33.333% - 10px);
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+app-room:hover {
+    transform: scale(1.05);
+    background-color: #40e0d0;  // Turquoise hover effect
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .rooms {
+        flex-direction: column;
+    }
+}
+/* In both theme files */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #ffcc00; /* Adjust for light/dark mode */
+    color: #313437;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .home-dark-theme {
+    body {
+      background-color: #1e1e1e;
+      color: #e0e0e0;
+    }
+  
+    .everything {
+      background-color: #2c2c2c;
+      color: #e0e0e0;
+    }
+  
+    .rooms {
+      background-color: #333333;
+      color: #ffffff;
+    }
+  
+    .metrics-section {
+      background-color: #444444;
+      color: #dddddd;
+    }
+  
+    /* Add any additional dark theme styles below */
+  }
+  .home-light-theme {
+    body {
+      background-color: #ffffff;
+      color: #333333;
+    }
+  
+    .everything {
+      background-color: #f0f0f0;
+      color: #333333;
+    }
+  
+    .rooms {
+      background-color: #ffffff;
+      color: #111111;
+    }
+  
+    .metrics-section {
+      background-color: #e8e8e8;
+      color: #444444;
+    }
+  
+    /* Add any additional light theme styles below */
+  }
+  

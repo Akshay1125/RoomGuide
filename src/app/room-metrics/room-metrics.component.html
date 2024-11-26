@@ -1,0 +1,34 @@
+<div class="metrics-container">
+    <h2>Room Metrics</h2>
+    <table class="metrics-table">
+      <tr>
+        <td>Occupancy Rate:</td>
+        <td>{{ occupancyRate | number: '1.0-2' }}%</td>
+      </tr>
+      <tr>
+        <td>Allocation Efficiency:</td>
+        <td>{{ allocationEfficiency | number: '1.0-2' }}%</td>
+      </tr>
+      <tr>
+        <td>Peak Usage Rooms:</td>
+        <td>{{ peakUsageRooms }}</td>
+      </tr>
+      <tr>
+        <td>Unutilized Rooms:</td>
+        <td>{{ unutilizedRooms }}</td>
+      </tr>
+    </table>
+  
+    <h3>Room Allocation Details</h3>
+    <table class="allocation-table">
+      <tr>
+        <th>Room</th>
+        <th>Number of Students</th>
+      </tr>
+      <tr *ngFor="let room of objectKeys(roomAllocation)">
+        <td>{{ room }}</td>
+        <td>{{ roomAllocation[room].length }}</td>
+      </tr>
+    </table>
+  </div>
+  
