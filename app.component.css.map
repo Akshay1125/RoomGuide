@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/app.component.scss", "src/app/home/home-dark-theme.scss", "src/app/home/home-light-theme.scss"],
-  "sourcesContent": ["/* styles.scss */\r\n@import '../app/home/home-dark-theme.scss';\r\n@import '../app/home/home-light-theme.scss';\r\n", ".home-dark-theme {\r\n  body {\r\n    background-color: #1e1e1e;\r\n    color: #e0e0e0;\r\n  }\r\n\r\n  .everything {\r\n    background-color: #2c2c2c;\r\n    color: #e0e0e0;\r\n  }\r\n\r\n  .rooms {\r\n    background-color: #333333;\r\n    color: #ffffff;\r\n  }\r\n\r\n  .metrics-section {\r\n    background-color: #444444;\r\n    color: #dddddd;\r\n  }\r\n\r\n  /* Add any additional dark theme styles below */\r\n}\r\n", ".home-light-theme {\r\n    body {\r\n      background-color: #ffffff;\r\n      color: #333333;\r\n    }\r\n  \r\n    .everything {\r\n      background-color: #f0f0f0;\r\n      color: #333333;\r\n    }\r\n  \r\n    .rooms {\r\n      background-color: #ffffff;\r\n      color: #111111;\r\n    }\r\n  \r\n    .metrics-section {\r\n      background-color: #e8e8e8;\r\n      color: #444444;\r\n    }\r\n  \r\n    /* Add any additional light theme styles below */\r\n  }\r\n  "],
-  "mappings": ";ACAA,CAAA;;AACE,CADF,gBACE;AACE,oBAAA;AACA,SAAA;;AAGF,CANF,gBAME,CAAA;AACE,oBAAA;AACA,SAAA;;AAGF,CAXF,gBAWE,CAAA;AACE,oBAAA;AACA,SAAA;;AAGF,CAhBF,gBAgBE,CAAA;AACE,oBAAA;AACA,SAAA;;AClBJ,CAAA;;AACI,CADJ,iBACI;AACE,oBAAA;AACA,SAAA;;AAGF,CANJ,iBAMI,CDAF;ACCI,oBAAA;AACA,SAAA;;AAGF,CAXJ,iBAWI,CDAF;ACCI,oBAAA;AACA,SAAA;;AAGF,CAhBJ,iBAgBI,CDAF;ACCI,oBAAA;AACA,SAAA;;",
-  "names": []
-}
