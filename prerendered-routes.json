@@ -1,9 +1,0 @@
-{
-  "routes": [
-    "/",
-    "/contact",
-    "/home",
-    "/path",
-    "/room-metrics"
-  ]
-}
